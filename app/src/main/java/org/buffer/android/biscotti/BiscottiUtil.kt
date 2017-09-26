@@ -8,8 +8,12 @@ import android.support.test.rule.ActivityTestRule
  */
 object BiscottiUtil {
 
-    fun changeOrientation(activity: ActivityTestRule<*>) {
+    fun changeOrientationToLandscape(activity: ActivityTestRule<*>) {
         activity.activity.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
+    }
+
+    fun changeOrientationToPortrait(activity: ActivityTestRule<*>) {
+        activity.activity.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
     }
 
 }
