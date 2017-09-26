@@ -34,16 +34,15 @@ Using Biscotti
 To use Biscotti in your projects, add the following to your root build.gradle file:
 
     allprojects {
-		    repositories {
-			    ...
-			    maven { url 'https://jitpack.io' }
-		    }   
+        repositories {
+	    maven { url 'https://jitpack.io' }
+	}   
     }
 
 Followed by the dependancy in your app level build.gradle file:
 
     androidTestCompile 'com.github.bufferapp:Biscotti:-SNAPSHOT'
     
-    or
+or
     
     androidTestImplementation 'com.github.bufferapp:Biscotti:-SNAPSHOT'
