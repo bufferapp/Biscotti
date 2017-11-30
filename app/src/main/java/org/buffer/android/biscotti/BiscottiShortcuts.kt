@@ -1,20 +1,25 @@
 package org.buffer.android.biscotti
 
+import android.os.Build
 import android.support.test.InstrumentationRegistry
 import android.support.test.uiautomator.*
 
 object BiscottiShortcuts {
 
     fun assertAppShortcutsExists(appName: String, vararg shortcutLabels: String) {
-        val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
-        findAppIcon(device, appName).longClick()
-        shortcutLabels.forEach { assert(device.hasObject(By.text(it))) }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N_MR1) {
+            val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
+            findAppIcon(device, appName).longClick()
+            shortcutLabels.forEach { assert(device.hasObject(By.text(it))) }
+        }
     }
 
     fun assertAppShortcutsDoNotExist(appName: String, vararg shortcutLabels: String) {
-        val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
-        findAppIcon(device, appName).longClick()
-        shortcutLabels.forEach { assert(!device.hasObject(By.text(it))) }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N_MR1) {
+            val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
+            findAppIcon(device, appName).longClick()
+            shortcutLabels.forEach { assert(!device.hasObject(By.text(it))) }
+        }
     }
 
     private fun findAppIcon(device: UiDevice, appName: String): UiObject {
