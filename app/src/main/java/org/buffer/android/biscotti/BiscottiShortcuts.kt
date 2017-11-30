@@ -5,16 +5,16 @@ import android.support.test.uiautomator.*
 
 object BiscottiShortcuts {
 
-    fun assertAppShortcutExists(appName: String, shortcutLabel: String) {
+    fun assertAppShortcutsExists(appName: String, vararg shortcutLabels: String) {
         val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
         findAppIcon(device, appName).longClick()
-        assert(device.hasObject(By.text(shortcutLabel)))
+        shortcutLabels.forEach { assert(device.hasObject(By.text(it))) }
     }
 
-    fun assertAppShortcutDoesNotExist(appName: String, shortcutLabel: String) {
+    fun assertAppShortcutsDoNotExist(appName: String, vararg shortcutLabels: String) {
         val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
         findAppIcon(device, appName).longClick()
-        assert(!device.hasObject(By.text(shortcutLabel)))
+        shortcutLabels.forEach { assert(!device.hasObject(By.text(it))) }
     }
 
     private fun findAppIcon(device: UiDevice, appName: String): UiObject {
