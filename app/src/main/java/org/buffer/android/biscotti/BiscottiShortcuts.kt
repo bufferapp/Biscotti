@@ -3,6 +3,7 @@ package org.buffer.android.biscotti
 import android.os.Build
 import android.support.test.InstrumentationRegistry
 import android.support.test.uiautomator.*
+import org.junit.Assert
 
 object BiscottiShortcuts {
 
@@ -10,7 +11,11 @@ object BiscottiShortcuts {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N_MR1) {
             val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
             findAppIcon(device, appName).longClick()
-            shortcutLabels.forEach { assert(device.hasObject(By.text(it))) }
+            shortcutLabels.forEach {
+                if (!device.hasObject(By.text(it))) {
+                    Assert.fail("The sepcified shortcut was not found")
+                }
+            }
         }
     }
 
@@ -18,7 +23,11 @@ object BiscottiShortcuts {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N_MR1) {
             val device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())
             findAppIcon(device, appName).longClick()
-            shortcutLabels.forEach { assert(!device.hasObject(By.text(it))) }
+            shortcutLabels.forEach {
+                if (device.hasObject(By.text(it))) {
+                    Assert.fail("The specified shortcut was not found")
+                }
+            }
         }
     }
 
