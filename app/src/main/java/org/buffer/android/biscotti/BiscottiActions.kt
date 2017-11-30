@@ -5,9 +5,6 @@ import android.support.test.espresso.ViewAction
 import android.view.View
 import org.hamcrest.Matcher
 
-/**
- * Custom View Actions
- */
 object BiscottiActions {
 
     fun withCustomConstraints(action: ViewAction, constraints: Matcher<View>): ViewAction {

@@ -5,9 +5,6 @@ import android.os.SystemClock
 import android.support.test.espresso.Espresso
 import android.support.test.rule.ActivityTestRule
 
-/**
- * General Utility methods for espresso tests
- */
 object BiscottiUtil {
 
     fun changeOrientationToLandscape(activity: ActivityTestRule<*>) {
