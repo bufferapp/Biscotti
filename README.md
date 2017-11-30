@@ -27,6 +27,8 @@ Utilities
 
 - [changeOrientationToPortrait](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiUtil.kt#L15) - Change the test devices orientation to portrait
 
+- [closeSoftKeyboardWithDelay](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiUtil.kt#L21) - Close the software keyboard, followed by applying a delay using the given delay value
+
 
 Using Biscotti
 --------------
