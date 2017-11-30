@@ -20,6 +20,13 @@ Actions
 - [withCustomConstraints()](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiActions.kt#L13) - 
 Perform the given view action whilst also defining a custom constraint to be applied
 
+App Shortcuts
+-------------
+
+- [assertAppShortcutDoesNotExist()](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiShortcuts.kt#L14) - Check that an app shortcut for the given app name, with the given label, does not exist
+
+- [assertAppShortcutExists()](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiShortcuts.kt#L8) - Check that an app shortcut for the given app name, with the given label, exists
+
 Utilities
 ---------
 
