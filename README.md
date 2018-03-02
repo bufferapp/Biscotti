@@ -11,7 +11,9 @@ The ingredients of our Biscotti currently consist of:
 Matchers
 --------
 
-Coming soon :)
+- [withTextColor()](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiMatchers.kt#L12) - Matches a `TextView` or `EditText` if it has the given text color
+
+- [withBackground()](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiMatchers.kt#L26) - Matches a `View` if it has the given background color
 
 
 Actions
