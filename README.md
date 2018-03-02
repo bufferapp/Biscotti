@@ -36,6 +36,8 @@ Utilities
 
 - [closeSoftKeyboardWithDelay](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiUtil.kt#L21) - Close the software keyboard, followed by applying a delay using the given delay value
 
+- [verifyLinkOpen()](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiUtil.kt#L31) - Verify a link is opened after performing an action
+
 
 Using Biscotti
 --------------
