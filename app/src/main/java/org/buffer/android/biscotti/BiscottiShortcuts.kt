@@ -13,7 +13,7 @@ object BiscottiShortcuts {
             findAppIcon(device, appName).longClick()
             shortcutLabels.forEach {
                 if (!device.hasObject(By.text(it))) {
-                    Assert.fail("The sepcified shortcut was not found")
+                    Assert.fail("The specified shortcut was not found")
                 }
             }
         }
