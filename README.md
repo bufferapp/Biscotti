@@ -46,7 +46,7 @@ To use Biscotti in your projects, add the following to your root build.gradle fi
 
     allprojects {
         repositories {
-	    maven { url 'https://jitpack.io' }
+	        maven { url 'https://jitpack.io' }
         }   
     }
 
