@@ -29,6 +29,15 @@ App Shortcuts
 
 - [assertAppShortcutExists()](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiShortcuts.kt#L8) - Check that an app shortcut for the given app name, with the given label, exists
 
+Intents
+---------
+
+- [verifyLinkOpen()](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiIntents.kt#L16) - Verify a link is opened after performing an action
+
+- [verifyActivityLaunched()](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiIntents.kt#L22) - Verify an Activity with a given name is launched
+
+- [verifyExpectedIntent()](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiIntents.kt#L27) - Verify an Intent with a given Matcher is launched
+
 Utilities
 ---------
 
@@ -37,12 +46,6 @@ Utilities
 - [changeOrientationToPortrait](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiUtil.kt#L15) - Change the test devices orientation to portrait
 
 - [closeSoftKeyboardWithDelay](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiUtil.kt#L21) - Close the software keyboard, followed by applying a delay using the given delay value
-
-- [verifyLinkOpen()](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiUtil.kt#L31) - Verify a link is opened after performing an action
-
-- [verifyActivityLaunched()](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiUtil.kt#L39) - Verify an Activity with a given name is launched
-
-- [verifyExpectedIntent()](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiUtil.kt#L44) - Verify an Intent with a given Matcher is launched
 
 Using Biscotti
 --------------
