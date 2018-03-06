@@ -40,6 +40,9 @@ Utilities
 
 - [verifyLinkOpen()](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiUtil.kt#L31) - Verify a link is opened after performing an action
 
+- [verifyActivityLaunched()](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiUtil.kt#L39) - Verify an Activity with a given name is launched
+
+- [verifyExpectedIntent()](https://github.com/bufferapp/Biscotti/blob/master/app/src/main/java/org/buffer/android/biscotti/BiscottiUtil.kt#L44) - Verify an Intent with a given Matcher is launched
 
 Using Biscotti
 --------------
