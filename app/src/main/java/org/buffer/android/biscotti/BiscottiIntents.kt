@@ -15,7 +15,6 @@ object BiscottiIntents {
 
     fun verifyLinkOpen(expectedUrl: String, openLink: () -> Unit) {
         val expectedIntent = allOf(hasAction(Intent.ACTION_VIEW), hasData(expectedUrl))
-        Intents.init()
         verifyExpectedIntent(expectedIntent, openLink)
     }
 
