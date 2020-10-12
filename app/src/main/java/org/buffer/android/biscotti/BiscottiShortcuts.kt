@@ -1,8 +1,12 @@
 package org.buffer.android.biscotti
 
 import android.os.Build
-import android.support.test.InstrumentationRegistry
-import android.support.test.uiautomator.*
+import androidx.test.platform.app.InstrumentationRegistry
+import androidx.test.uiautomator.By
+import androidx.test.uiautomator.UiDevice
+import androidx.test.uiautomator.UiObject
+import androidx.test.uiautomator.UiScrollable
+import androidx.test.uiautomator.UiSelector
 import org.junit.Assert
 
 object BiscottiShortcuts {

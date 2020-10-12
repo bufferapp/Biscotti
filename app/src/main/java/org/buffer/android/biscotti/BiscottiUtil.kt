@@ -2,8 +2,8 @@ package org.buffer.android.biscotti
 
 import android.content.pm.ActivityInfo
 import android.os.SystemClock
-import android.support.test.espresso.Espresso
-import android.support.test.rule.ActivityTestRule
+import androidx.test.espresso.Espresso
+import androidx.test.rule.ActivityTestRule
 
 object BiscottiUtil {
 
