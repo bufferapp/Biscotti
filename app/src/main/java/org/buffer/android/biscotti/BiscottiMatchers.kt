@@ -1,11 +1,11 @@
 package org.buffer.android.biscotti
 
 import android.graphics.drawable.ColorDrawable
-import android.support.annotation.ColorInt
-import android.support.test.espresso.matcher.BoundedMatcher
-import android.support.test.internal.util.Checks
 import android.view.View
 import android.widget.TextView
+import androidx.annotation.ColorInt
+import androidx.test.espresso.intent.Checks
+import androidx.test.espresso.matcher.BoundedMatcher
 import org.hamcrest.Description
 import org.hamcrest.Matcher
 
